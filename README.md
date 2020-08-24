@@ -18,6 +18,8 @@ In-progress Python 3 Discord bot using Discord.py, Random Useless Facts API, and
 
 # Usage:
 
+Create and add your bot's account to a Discord server (detailed instructions [here](https://discordpy.readthedocs.io/en/latest/discord.html)).
+
 Create a file named secrets.py at the root of the project folder (alongside HelpBot.py) containing the following lines:
 
 ```
@@ -33,7 +35,7 @@ Install Dependencies:
 pip3 install -r requirements.txt
 ```
 
-Run Server:
+Run Bot:
 
 ```
 python3 HelpBot.py
