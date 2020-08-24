@@ -8,9 +8,15 @@ In-progress Python 3 Discord bot using Discord.py, Random Useless Facts API, and
 
 **Magic 8-ball Response:**: When mentioning the bot with @ and ending the message with a question mark, the bot will reply with a randomized message and ASCII face from static.py. 
 
+![Magic 8-ball Response](https://i.imgur.com/t6o6sX7.png "Magic 8-ball Response")
+
 **Hi I'm Dad:** When users use I'm, I am, or similar words in server messages the bot will reply to the user with "Hi, [word after I'm], I'm Dad!". Uses regular expression matching to find the correct syntax regardless of capitalization or use/absence of apostrophe. 
 
+![Hi I'm Dad](https://i.imgur.com/moSN30M.png "Hi I'm Dad")
+
 **Random Fact:** When users use the bot's random fact command (mentioning the bot with @ and putting "give me a fact" in the message), will use Python's requests library to request and display in chat a random fact via json from the [Random Useless Facts API](https://uselessfacts.jsph.pl/). 
+
+![Random Fact](https://i.imgur.com/fqSh4ZS.png "Random Fact")
 
 **Force disconnect from Voice Channel:** If the bot becomes stuck in a voice channel, users can mention the bot with @ and say "leave vc" to force it to disconnect. The bot will otherwise disconnect when the script is terminated. 
 
