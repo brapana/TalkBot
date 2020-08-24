@@ -42,11 +42,11 @@ class HelpBot(discord.Client):
         if message.author.id == self.user.id:
             return
 
-        # regex to return a "Hi, I'm dad!" joke to users who use I'm, I am, etc.
+        # regex to return a "Hi, I'm Dad!" joke to users who use I'm, I am, etc.
         reg_search = re.search(r'(i\'m|im|i am) (.{1,})$', message.content, re.IGNORECASE)
 
         if reg_search:
-            await message.channel.send('Hi {0}, I\'m dad! {1.author.mention}'.format(reg_search.group(2), message))
+            await message.channel.send('Hi {0}, I\'m Dad! {1.author.mention}'.format(reg_search.group(2), message))
 
         # if user @bot
         if self.user.id in message.raw_mentions:
