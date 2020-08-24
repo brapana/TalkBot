@@ -1,10 +1,10 @@
 # HelpBot
 
-In-progress Python 3 Discord bot using discord.py and Google's Text-to-speech via the gTTS Python library.
+In-progress Python 3 Discord bot using Discord.py, Useless Facts API, and Google's Text-to-Speech via the gTTS Python library.
 
 # Current Features
 
-**Text-to-speech:** Using the bot's tts command (mentioning the bot with @ and using the format "tts [message to be played]") will contact Google's text-to-speech API with the desired text and save its response as tts.mp3. The bot will then join the voice channel where the user resides and convert/playback the mp3 over the Discord voice channel. 
+**Text-to-speech:** Using the bot's tts command (mentioning the bot with @ and using the format "tts [message to be played]") will contact Google's text-to-speech API with the desired text and save its response as tts.mp3. The bot will then join the voice channel where the user resides and FFMPEG convert/playback the mp3 over the Discord voice channel. 
 
 **Magic 8-ball Response:**: When mentioning the bot with @ and ending the message with a question mark, the bot will reply with a randomized message and ASCII face from static.py. 
 
@@ -24,6 +24,8 @@ Create a file named secrets.py at the root of the project folder (alongside Help
 OWNER_ID = "Unique ID for owner's Discord account"
 CLIENT_ID = "Unique ID obtained from Discord's API Dashboard"
 ```
+
+Ensure that you have [FFMPEG](https://ffmpeg.org/) installed and correctly in your environment variables. FFMPEG is used to convert the .mp3 received from gTTS for use by Discord.py.
 
 Install Dependencies:
 
