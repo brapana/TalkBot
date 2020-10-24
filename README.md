@@ -1,6 +1,6 @@
-# HelpBot
+# TalkBot
 
-In-progress Python 3 Discord bot using Discord.py, Random Useless Facts API, and Google's Text-to-Speech via the gTTS Python library.
+Python 3 Discord bot using Discord.py, Random Useless Facts API, and Google's Text-to-Speech via the gTTS Python library.
 
 # Current Features
 
@@ -8,15 +8,15 @@ In-progress Python 3 Discord bot using Discord.py, Random Useless Facts API, and
 
 **Magic 8-ball Response:**: When mentioning the bot with @ and ending the message with a question mark, the bot will reply with a randomized message and ASCII face from static.py. 
 
-![Magic 8-ball Response](https://i.imgur.com/t6o6sX7.png "Magic 8-ball Response")
+![Magic 8-ball Response](https://i.imgur.com/sqlFE6l.png "Magic 8-ball Response")
 
 **Hi I'm Dad:** When users use I'm, I am, or similar words in server messages the bot will reply to the user with "Hi, [word after I'm], I'm Dad!". Uses regular expression matching to find the correct syntax regardless of capitalization or use/absence of apostrophe. 
 
-![Hi I'm Dad](https://i.imgur.com/moSN30M.png "Hi I'm Dad")
+![Hi I'm Dad](https://i.imgur.com/8n30Iql.png "Hi I'm Dad")
 
 **Random Fact:** When users use the bot's random fact command (mentioning the bot with @ and putting "give me a fact" in the message), will use Python's requests library to request and display in chat a random fact via json from the [Random Useless Facts API](https://uselessfacts.jsph.pl/). 
 
-![Random Fact](https://i.imgur.com/fqSh4ZS.png "Random Fact")
+![Random Fact](https://i.imgur.com/e7hoNmZ.png "Random Fact")
 
 **Force disconnect from Voice Channel:** If the bot becomes stuck in a voice channel, users can mention the bot with @ and say "leave vc" to force it to disconnect. The bot will otherwise disconnect when the script is terminated. 
 
@@ -26,7 +26,7 @@ In-progress Python 3 Discord bot using Discord.py, Random Useless Facts API, and
 
 Create and add your bot's account to a Discord server (detailed instructions [here](https://discordpy.readthedocs.io/en/latest/discord.html)).
 
-Create a file named secrets.py at the root of the project folder (alongside HelpBot.py) containing the following lines:
+Create a file named secrets.py at the root of the project folder (alongside TalkBot.py) containing the following lines:
 
 ```
 OWNER_ID = "Unique ID for owner's Discord account"
@@ -44,5 +44,5 @@ pip3 install -r requirements.txt
 Run Bot:
 
 ```
-python3 HelpBot.py
+python3 TalkBot.py
 ```
