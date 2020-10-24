@@ -22,7 +22,7 @@ from static import RESPONSES
 voice_client = None
 
 
-class HelpBot(discord.Client):
+class TalkBot(discord.Client):
     async def on_ready(self):
         print('Connected as')
         print(self.user.name)
@@ -114,7 +114,7 @@ class HelpBot(discord.Client):
 
 if __name__ == '__main__':
 
-    client = HelpBot(activity=discord.Activity(type=discord.ActivityType.listening,
+    client = TalkBot(activity=discord.Activity(type=discord.ActivityType.listening,
                                                name="King Gizzard and the Lizard Wizard - Cyboogie"))
 
     client.run(secrets.CLIENT_ID)
