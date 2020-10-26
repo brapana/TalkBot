@@ -22,7 +22,7 @@ Python 3 Discord bot using Discord.py, Random Useless Facts API, and Google's Te
 
 **End bot process:** Mentioning the bot with @ and saying "disconnect" will disconnect the bot from the Discord server and exit its process. This command is only able to be run by the bot owner as defined in secrets.py
 
-# Usage:
+# Usage
 
 Create and add your bot's account to a Discord server (detailed instructions [here](https://discordpy.readthedocs.io/en/latest/discord.html)).
 
